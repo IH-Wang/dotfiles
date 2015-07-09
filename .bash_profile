@@ -49,7 +49,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # z beats cd most of the time.
 #   github.com/rupa/z
-source ~/code/z/z.sh
+#source ~/code/z/z.sh
 
 
 
