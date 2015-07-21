@@ -141,3 +141,17 @@ code () {
 shellswitch () {
 	chsh -s $(brew --prefix)/bin/$1
 }
+
+# get rfc3339 datetime for hugo post
+# 'rfc3339'
+rfc3339(){
+	python -c 'from rfc3339 import rfc3339;import time; print rfc3339(time.time())'
+}
+
+# kill process
+kill8080() {
+	MPUSED=`lsof -P | grep ':8080'  | awk '{print $2}' | sort -u`
+	for i in $MPUSED; do
+		kill -9 $i
+	done
+}
