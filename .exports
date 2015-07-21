@@ -22,7 +22,7 @@ source '/Users/cage/google-cloud-sdk/path.bash.inc'
 source '/Users/cage/google-cloud-sdk/completion.bash.inc'
 
 # GOPATH
-export YOUR_OWN_GOPATH=/Users/cage/IdeaProjects/sorter
+export YOUR_OWN_GOPATH=/Users/cage/go
 export GOPATH=$YOUR_OWN_GOPATH
 
 # Add appengine go sdk
