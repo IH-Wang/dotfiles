@@ -28,3 +28,7 @@ export GOPATH=$YOUR_OWN_GOPATH
 # Add appengine go sdk
 export GOOGLE_CLOUD_SDK=/Users/cage/google-cloud-sdk
 export PATH=$GOOGLE_CLOUD_SDK/bin:/usr/local/go/bin:$PATH:$GOPATH/bin
+
+# Add gitbook ebook convert - calibre
+export CALIBRE_PATH=/Applications/calibre.app/Contents/MacOS
+export PATH=$PATH:$CALIBRE_PATH
