@@ -16,7 +16,7 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias sbl='open -a "Sublime Text"'
-alias chrome="open -a 'Google Chrome'"
+alias chrome="open -a 'Google Chrome Canary'"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
