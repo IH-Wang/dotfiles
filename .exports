@@ -36,4 +36,10 @@ export CALIBRE_PATH=/Applications/calibre.app/Contents/MacOS
 export PATH=$PATH:$CALIBRE_PATH
 
 # Add HOMEBREW_GITHUB_API_TOKEN
-export HOMEBREW_GITHUB_API_TOKEN=ff0bbfeeb89cfd0b01a2b5048868b351ae50cf7d
+export HOMEBREW_GITHUB_API_TOKEN=871f41bf92037b4f3fc14009e59158a33fbd723a
+
+# virtualenvwrapper
+# http://virtualenvwrapper.readthedocs.org/en/latest/install.html
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
