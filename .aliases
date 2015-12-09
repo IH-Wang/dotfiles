@@ -16,7 +16,7 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias sbl='open -a "Sublime Text"'
-alias chrome="open -a 'Google Chrome Canary'"
+alias chrome="open -a 'Google Chrome'"
 
 #---
 # Docker shortcuts
