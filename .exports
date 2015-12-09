@@ -19,7 +19,7 @@ source '/Users/cage/google-cloud-sdk/completion.bash.inc'
 # GOPATH
 export YOUR_OWN_GOPATH=/Users/cage/go
 # export GOPATH=$YOUR_OWN_GOPATH
-export GOPATH=/Users/cage/go
+export GOPATH=$YOUR_OWN_GOPATH:/Users/cage/google-cloud-sdk/platform/google_appengine/goroot
 
 # Add appengine go sdk
 export GOOGLE_CLOUD_SDK=/Users/cage/google-cloud-sdk
