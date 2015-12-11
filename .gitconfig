@@ -14,14 +14,16 @@
     re = remote
     di = diff
     dif = diff --cached
-    type = "cat-file -t"
-    dump = "cat-file -p"
     latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) [%(committername)]'
-    ls = log --pretty=format:'%Cred%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    ls = log --pretty=format:'%Cred%h%Creset %Cgreen%ad -%C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short
     hist = log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
     type = cat-file -t
     dump = cat-file -p
     track = log --pretty=raw --graph
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    dl = "!git ll -1"
+    dlc = diff --cached HEAD^
+    la = "!git config -l | grep alias | cut -c 7-"
 
 [color]
 	ui = always
