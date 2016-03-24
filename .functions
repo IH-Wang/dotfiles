@@ -180,3 +180,32 @@ dbu() { docker build -t=$1 .; }
 # Show all alias related docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 #---
+
+# show localhost ip
+showlocalhostip() {
+	ifconfig | grep "inet " | grep -v 127.0.0.1
+}
+
+#https://gist.github.com/cage1016/abf5f6ef3f35fd604f9e
+#!/usr/bin/env bash
+# [How to use Google App Engine with virtualenv | Vita Smid ~ Zephyrus | 
+#   Mathematics, philosophy, code, travel and everything in between.](http://ze.phyr.us/appengine-virtualenv/)
+# virtualenv pip package link helper
+# rm -rf gaenv
+# linkenv $VIRTUAL_ENV/lib/python2.7/site-packages gaenv
+link_pip(){
+	# Default linker foler
+	DEFAULT_LINK_FOLDER=gaenv
+
+	if [[ $# -eq 0 ]]
+	then
+	  LIB=$DEFAULT_LINK_FOLDER
+	else
+	  LIB=$1
+	fi
+
+	# relink
+	rm -rf $DEFAULT_LINK_FOLDER
+	rm -rf $LIB
+	linkenv $VIRTUAL_ENV/lib/python2.7/site-packages $LIB
+}
