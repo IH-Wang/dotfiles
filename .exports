@@ -17,8 +17,9 @@ source '/Users/cage/google-cloud-sdk/path.bash.inc'
 source '/Users/cage/google-cloud-sdk/completion.bash.inc'
 
 # GOPATH
+export GOROOT=/usr/local/Cellar/go/1.5.3/libexec
 export YOUR_OWN_GOPATH=/Users/cage/go
-export GOPATH=$YOUR_OWN_GOPATH/bin:/Users/cage/google-cloud-sdk/platform/google_appengine/goroot:/usr/local/go/bin
+export GOPATH=$YOUR_OWN_GOPATH:$YOUR_OWN_GOPATH/bin:/Users/cage/google-cloud-sdk/platform/google_appengine/goroot:/usr/local/go/bin
 export PATH=$PATH:$GOPATH
 
 # Add appengine go sdk
